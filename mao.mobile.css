@@ -4,12 +4,32 @@ and (max-device-width: 768px)
 and (-webkit-min-device-pixel-ratio: 2) {
 
 	nav {
-		height: 100px;
+		height: 80px;
+		padding: 0 5%;
+	}
+
+	@keyframes hideloader {
+	    from { 
+	        height: 100%;
+	    }
+	    to { 
+	        height: 80px;
+	    }
+	}
+
+	.circle-img img {
+	    width: auto;
+	    height: 80px;
+	}
+
+	.name img {
+	    width: 160px;
+	    height: auto;
 	}
 
 	.logo img {
 	    width: auto;
-	    height: 50%;
+	    height: 55%;
 	}
 
 	.menu {
@@ -17,12 +37,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
-	    top: 100px;
+	    top: 80px;
 	    left: 0;
 	    padding: 0;
 	    margin: 0;
 	    width: 100%;
-	    height: calc(100% - 100px);
+	    height: calc(100% - 80px);
 	    z-index: 666;
 	    background: #000;
 	    transition: all .3s ease;
@@ -111,37 +131,96 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 
 	.btn {
-		float: none;
-	    padding: 10px;
-	    margin: 0 auto;
-	    width: 50%;
-	    color: #000;
-        font-size: 18px;
-	    background: #fff;
-	}
-
-	.btn ion-icon {
-		font-size: 24px;
-		margin: 0 5px 0 0;
-	}
-
-	.btn-menu {
 		display: flex;
-		margin: 0;
+		margin: 0 0 0 15px;
 		padding: 0;
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		color: #fff;
 		background: #000;
 	}
 
-	.btn-menu ion-icon {
+	.btn:first-child {
+		margin: 0;
+	}
+
+	.btn span {
+		display: none;
+	}
+
+	.btn ion-icon {
 	    font-size: 24px;
 	    margin: 0;
 	}
 
-	.btn-login {
-	    display: none;
+	.section-shape {
+		display: none;
+	}
+
+	article {
+		display: block;
+    	padding: 0 5%;
+	}
+
+	.info {
+		width: 100%;
+	    padding: 10% 6%;
+		margin: 0 0 10% 0;
+	}
+
+	.info-icon ion-icon {
+	    font-size: 4em;
+	}
+
+	.info-description {
+	    font-size: 16px;
+	}
+
+	.section-1 {
+		padding: 80px 5% 0 5%;
+	}
+
+	.text {
+		width: 100%;
+		height: 50%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.title {
+		justify-content: center;
+		width: 100%;
+		margin: 0 0 5% 0;
+		font-size: 24px;
+	}
+
+	.description {
+		font-size: 16px;
+		text-align: center;
+		margin: 0 0 5% 0;
+	}
+
+	.btn-more {
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.btn-more ion-icon {
+		display: none !important;
+	}
+
+	.copyright {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.image {
+	    justify-content: center;
+	    width: 100%;
+	    height: 50%;
+	    padding: 0;
+	    margin: 0;
 	}
 
 }
