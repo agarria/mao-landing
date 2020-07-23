@@ -1,0 +1,147 @@
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 768px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+	nav {
+		height: 100px;
+	}
+
+	.logo img {
+	    width: auto;
+	    height: 50%;
+	}
+
+	.menu {
+	    position: fixed;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    top: 100px;
+	    left: 0;
+	    padding: 0;
+	    margin: 0;
+	    width: 100%;
+	    height: calc(100% - 100px);
+	    z-index: 666;
+	    background: #000;
+	    transition: all .3s ease;
+	    transform: translate(-100%, 0);
+	}
+
+	.open-menu {
+		transform: translate(0,0);
+	}
+
+	.open-menu .menu-content .link,
+	.open-menu .menu-content .btn {
+		transition: all .3s ease;
+		animation: showlink .3s forwards;
+		animation-delay: .3s;
+		transform: translate(0,20px);
+	}
+
+	@keyframes showlink {
+		from {
+			opacity: 0;
+			transform: translate(0,20px);
+		}
+		to {
+			opacity: 1;
+			transform: translate(0,0);
+		}
+	}
+
+	.open-icon {
+		background: #d11141 !important;
+	}
+
+	.open-icon .icon-menu {
+		display: none;
+	}
+
+	.open-icon .icon-close {
+		display: block;
+	}
+
+	.icon-close {
+		display: none;
+	}
+
+	.menu-content {
+	    position: relative;
+	    display: block;
+	    float: left;
+	    width: auto;
+	    height: auto;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.menu-content .btn {
+		opacity: 0;
+	}
+
+	.menu-content .link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	    width: 100%;
+	    margin: 0 0 10% 0;
+	    color: #fff;
+	    opacity: 0;
+	    font-size: 18px;
+	}
+
+	.menu-content .link:first-child {
+	    margin: 0 0 10% 0;
+	}
+
+	.menu-content .link:last-child {
+	    margin: 0;
+	}
+
+	.menu-content .link ion-icon {
+		font-size: 24px;
+		margin: 0 5px 0 0;
+	}
+
+	.links .link {
+		display: none;
+	}
+
+	.btn {
+		float: none;
+	    padding: 10px;
+	    margin: 0 auto;
+	    width: 50%;
+	    color: #000;
+        font-size: 18px;
+	    background: #fff;
+	}
+
+	.btn ion-icon {
+		font-size: 24px;
+		margin: 0 5px 0 0;
+	}
+
+	.btn-menu {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		width: 50px;
+		height: 50px;
+		color: #fff;
+		background: #000;
+	}
+
+	.btn-menu ion-icon {
+	    font-size: 24px;
+	    margin: 0;
+	}
+
+	.btn-login {
+	    display: none;
+	}
+
+}
