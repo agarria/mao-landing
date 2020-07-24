@@ -110,7 +110,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	    margin: 0 0 10% 0;
 	    color: #fff;
 	    opacity: 0;
-	    font-size: 18px;
+	    font-size: 16px;
 	}
 
 	.menu-content .link:first-child {
@@ -122,7 +122,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 
 	.menu-content .link ion-icon {
-		font-size: 24px;
+		font-size: 22px;
 		margin: 0 5px 0 0;
 	}
 
@@ -211,7 +211,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 
 	.copyright {
-		font-size: 12px;
+		font-size: 10px;
 		text-align: center;
 	}
 
@@ -221,6 +221,28 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	    height: 50%;
 	    padding: 0;
 	    margin: 0;
+	}
+
+	.form-container {
+	    margin: 80px 0 0 0;
+	    padding: 10% 5%;
+	}
+
+	.field-title {
+		font-size: 24px;
+		margin: 0 0 10% 0;
+	}
+
+	input,
+	select {
+	    padding: 0 15px;
+	    height: 45px;
+	    line-height: 45px;
+	}
+
+	.btn-submit {
+		width: 100% !important;
+		line-height: 40px !important;
 	}
 
 }

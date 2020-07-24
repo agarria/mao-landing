@@ -158,7 +158,8 @@ body {
 .logo,
 .links,
 .content,
-.image {
+.image,
+form {
     opacity: 0;
     animation: showimg .3s forwards;
     transform: translate(0,20px);
@@ -471,6 +472,14 @@ article {
     height: 100%;
 }
 
+.image-yellow {
+    justify-content: flex-start;
+    float: left;
+    height: calc(100% - 120px);
+    padding: 5% 0 0 0;
+    margin: 120px 0 0 10%;
+}
+
 .text {
     position: relative;
     display: flex;
@@ -482,6 +491,27 @@ article {
     padding: 0 0 0 10%;
     margin: 120px 0 0 0;
     z-index: 333;
+}
+
+.text-yellow {
+    padding: 0 10% 0 0;
+}
+
+.text-yellow .content .title {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.text-yellow .content .description {
+    text-align: right;
+}
+
+.text-yellow .content .btn-more {
+    float: right;
+}
+
+.text-yellow .content .copyright {
+    text-align: right;
 }
 
 .content {
@@ -503,6 +533,7 @@ article {
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
+    line-height: 50px;
 }
 
 .description {
