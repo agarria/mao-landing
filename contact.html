@@ -8,18 +8,31 @@
     <meta name="autor" content="Alex García">
     <meta name="keywords" content="mao, ad, optimizer, revenue, help, money, smart my ad">
     <meta name="description" content="MAO helps web publishers automate ad listings to maximize revenue and return.">
-    <link rel="canonical" href="http://myadoptimizer.com/">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="http://myadoptimizer.com">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <title>MAO</title>
-    <meta property="og:url" content="http://myadoptimizer.com/">
+    <meta property="og:url" content="http://myadoptimizer.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MAO">
     <meta property="og:title" content="MAO">
     <meta property="og:description" content="MAO helps web publishers automate ad listings to maximize revenue and return.">
     <meta property="og:image" content="img/thumbnail.png">
     <link rel="stylesheet" type="text/css" href="mao.css">
+    <link rel="stylesheet" type="text/css" href="mao.mobile.css">
 </head>
 <body>
+    <div class="preloader">
+        <span class="logo-preloader">
+            <span class="circle">
+                <span class="circle-img">
+                    <img src="img/logo-single.png">
+                </span>
+            </span>
+            <span class="name">
+                <img src="img/logo-name.png">
+            </span>
+        </span>
+    </div>
     <nav>
         <div class="logo">
             <img src="img/logo-blk.png">
@@ -29,46 +42,71 @@
             <a class="link" href="">Direct Bidder</a>
             <a class="link" href="">About Us</a>
             <a class="link" href="">Contact Us</a>
-            <a class="btn" href="">
+            <a class="btn" target="_blank" href="">
                 <ion-icon name="log-in-outline"></ion-icon>
-                Login
+                <span>Login</span>
+            </a>
+            <a id="icon" class="btn btn-menu" onclick="menu()">
+                <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-close" name="close-outline"></ion-icon>
             </a>
         </div>
     </nav>
+    <div id="menu" class="menu">
+        <div class="menu-content">
+            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>Private Exchange</a>
+            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>Direct Bidder</a>
+            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>About Us</a>
+            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>Contact Us</a>
+        </div>
+    </div>
     <main>
-        <section>
-            <div class="character-text">
-                <div class="character-box">
-                    <span class="character-title">
-                        <span class="character-tag">A true</span>
-                        <span class="character-label">Private exchange<br>for media sites & publishers!<br>Take control of your business.</span>
-                    </span>
-                    <span class="character-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a <b>True Real Time Bidding Private Exchange</b>.</span>
-                    <span class="character-description">We help empower Exchange Managers by providing them cutting-edge technology so they can quickly build, manage, & grow direct advertiser campaigns as well as integrate their 3rd party ad network feeds as backfill all from one easy-to-use, intuitive admin portal. </span>
-                    <span class="character-description">The MyAdOptimizer decision engine organizes & optimizes all available ad listings in real-time for improved monetization and yield. Simplified reporting puts you in control with access via desktop, mobile device, automated reports and API integrations so you can manage your business how you like.</span>
+        <div class="form-container">
+            <form method="post" name="contact_form" action="form-handler.php">
+                <span class="field-title">Contact Us</span>
+                <div class="field">
+                    <label class="field-name">Name <span class="field-required">*</span></label>
+                    <input id="name" type="text" name="name">
+                    <span class="field-description">Put your name</span>
                 </div>
-            </div>
-            <div class="character">
-                <img src="img/character-1.svg">
-                <span class="character-copyright">
-                    <span class="copyright">MyAdOptimizer.com</span>
-                </span>
-            </div>
-            <div class="character-more">
-                <a class="btn btn-chat green" href=""><ion-icon name="chatbox-ellipses-outline"></ion-icon></a>
-                <span class="character-main">Private Exchange</span>
-                <a class="btn btn-more green" href=""><ion-icon name="chevron-down-outline"></ion-icon></a>
-            </div>
-        </section>
-        <section>
-            
-        </section>
-        <section>
-            
-        </section>
+                <div class="field">
+                    <label class="field-name">Last Name <span class="field-required">*</span></label>
+                    <input id="lastname" type="text" name="lastname">
+                    <span class="field-description">Put your last name</span>
+                </div>
+                <div class="field">
+                    <label class="field-name">Email Address <span class="field-required">*</span></label>
+                    <input id="email" type="email" name="email">
+                    <span class="field-description">Put your personal email address</span>
+                </div>
+                <div class="field">
+                    <label class="field-name">Subject <span class="field-required">*</span></label>
+                    <input id="subject" type="text" name="subject">
+                    <span class="field-description">Put the subject of your interest</span>
+                </div>
+                <div class="field">
+                    <label class="field-name">My Partnetship Interest <span class="field-required">*</span></label>
+                    <select id="interest" name="interest">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="Advertaiser">Advertaiser</option>
+                        <option value="Something 1">Something 1</option>
+                        <option value="Something 2">Something 2</option>
+                        <option value="Something 3">Something 3</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="field-name">Message <span class="field-required">*</span></label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="field">
+                    <input class="btn btn-submit" type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="text/javascript" src="gen_validatorv31.js"></script>
 <script type="text/javascript" src="mao.js"></script>
 </html>

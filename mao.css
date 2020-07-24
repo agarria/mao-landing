@@ -269,6 +269,57 @@ nav {
     margin: 0 8px 0 0;
 }
 
+.btn-submit {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+input,
+select,
+textarea {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    background: #e5e5e5;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    box-shadow: none;
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+input:hover,
+input:focus,
+input:active,
+select:hover,
+select:focus,
+select:active,
+textarea:hover,
+textarea:focus,
+textarea:active {
+    outline: none;
+}
+
+input,
+select {
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+}
+
+textarea {
+    padding: 15px;
+    height: auto;
+    resize: none;
+}
+
 main {
     position: absolute;
     display: block;
@@ -473,4 +524,61 @@ article {
     font-weight: 400;
     text-decoration: none;
     text-transform: lowercase;
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+    margin: 120px 0 0 0;
+    background: #fff;
+}
+
+.field-title {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 5% 0;
+    text-align: center;
+}
+
+.field {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.field:last-child {
+    margin: 0;
+}
+
+.field-name {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.field-description {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.field-required {
+    color: #d11141;
 }
