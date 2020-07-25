@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="robots" content="index, follow">
@@ -34,14 +35,14 @@
         </span>
     </div>
     <nav>
-        <div class="logo">
+        <a class="logo" href="">
             <img src="img/logo-blk.png">
-        </div>
+        </a>
         <div class="links">
-            <a class="link" href="">Private Exchange</a>
-            <a class="link" href="">Direct Bidder</a>
-            <a class="link" href="">About Us</a>
-            <a class="link" href="">Contact Us</a>
+            <a class="link" href="#privateexchange">Private Exchange</a>
+            <a class="link" href="#directbidder">Direct Bidder</a>
+            <a class="link" href="#aboutus">About Us</a>
+            <a class="link" href="contact.html">Contact Us</a>
             <a class="btn" target="_blank" href="">
                 <ion-icon name="log-in-outline"></ion-icon>
                 <span>Login</span>
@@ -54,106 +55,104 @@
     </nav>
     <div id="menu" class="menu">
         <div class="menu-content">
-            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>Private Exchange</a>
-            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>Direct Bidder</a>
-            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>About Us</a>
-            <a class="link" href=""><ion-icon name="link-outline"></ion-icon>Contact Us</a>
+            <a class="link" onclick="link()" href="#privateexchange"><ion-icon name="link-outline"></ion-icon>Private Exchange</a>
+            <a class="link" onclick="link()" href="#directbidder"><ion-icon name="link-outline"></ion-icon>Direct Bidder</a>
+            <a class="link" onclick="link()" href="#aboutus"><ion-icon name="link-outline"></ion-icon>About Us</a>
+            <a class="link" onclick="link()" href="contact.html"><ion-icon name="link-outline"></ion-icon>Contact Us</a>
         </div>
     </div>
     <main>
-        <section class="bg-green section-1">
-            <div class="text">
-                <span class="content">
-                    <span class="title">Take control of your business</span>
-                    <span class="description">A TRUE private exchange for media sites & publishers!</span>
-                    <a class="btn btn-more" href="">
-                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        Learn More
-                    </a>
-                    <a class="copyright" href="" target="_blank">www.directbidder.com</a>
-                </span>
+        <div id="privateexchange" class="section bg-green">
+            <div class="row">
+                <div class="section-text">
+                    <span class="content">
+                        <span class="title">Take control of your business</span>
+                        <span class="description">A TRUE private exchange for media sites & publishers!</span>
+                        <a class="btn btn-more" href="contact.html">Learn More</a>
+                        <a class="copyright" href="www.directbidder.com" target="_blank">www.directbidder.com</a>
+                    </span>
+                </div>
+                <div class="section-image">
+                    <img src="img/character-1.svg">
+                </div>
             </div>
-            <div class="image">
-                <img src="img/character-1.svg">
+            <div class="section-more bg-green-light">
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="medal-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="rocket-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="speedometer-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
             </div>
-            <img class="section-shape" src="img/shape-green.svg">
-        </section>
-        <article class="bg-green">
-            <div class="info green">
-                <span class="info-icon"><ion-icon name="medal-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+            <img class="section-shape shape-0" src="img/shape-green.svg">
+        </div>
+        <div id="directbidder" class="section bg-yellow">
+            <div class="row">
+                <div class="section-text">
+                    <span class="content">
+                        <span class="title">Take control of your business</span>
+                        <span class="description">A TRUE private exchange for media sites & publishers!</span>
+                        <a class="btn btn-more" href="contact.html">Learn More</a>
+                        <a class="copyright" href="www.directbidder.com" target="_blank">www.directbidder.com</a>
+                    </span>
+                </div>
+                <div class="section-image">
+                    <img src="img/character-2.svg">
+                </div>
             </div>
-            <div class="info green">
-                <span class="info-icon"><ion-icon name="rocket-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+            <div class="section-more bg-yellow-light">
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="medal-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="rocket-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="speedometer-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
             </div>
-            <div class="info green">
-                <span class="info-icon"><ion-icon name="speedometer-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+            <img class="section-shape shape-1" src="img/shape-yellow.svg">
+        </div>
+        <div id="aboutus" class="section bg-blue">
+            <div class="row">
+                <div class="section-text">
+                    <span class="content">
+                        <span class="title">Take control of your business</span>
+                        <span class="description">A TRUE private exchange for media sites & publishers!</span>
+                        <a class="btn btn-more" href="contact.html">Learn More</a>
+                        <a class="copyright" href="www.directbidder.com" target="_blank">www.directbidder.com</a>
+                    </span>
+                </div>
+                <div class="section-image">
+                    <img src="img/character-3.svg">
+                </div>
             </div>
-        </article>
-        <section class="bg-yellow">
-            <div class="image image-yellow">
-                <img src="img/character-2.svg">
+            <div class="section-more bg-blue-light">
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="medal-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="rocket-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
+                <div class="section-article">
+                    <span class="article-icon"><ion-icon name="speedometer-outline"></ion-icon></span>
+                    <span class="article-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
+                </div>
             </div>
-            <div class="text text-yellow">
-                <span class="content">
-                    <span class="title"><ion-icon name="lock-closed-outline"></ion-icon>Private Exchange</span>
-                    <span class="description">A TRUE private exchange for media sites & publishers! Take control of your business.</span>
-                    <a class="btn btn-more" href="">
-                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        Learn More
-                    </a>
-                    <a class="copyright" href="" target="_blank">www.directbidder.com</a>
-                </span>
-            </div>
-            <img class="section-shape" src="img/shape-yellow.svg">
-        </section>
-        <article class="bg-yellow">
-            <div class="info yellow">
-                <span class="info-icon"><ion-icon name="medal-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
-            </div>
-            <div class="info yellow">
-                <span class="info-icon"><ion-icon name="rocket-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
-            </div>
-            <div class="info yellow">
-                <span class="info-icon"><ion-icon name="speedometer-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
-            </div>
-        </article>
-        <section class="bg-blue">
-            <div class="text">
-                <span class="content">
-                    <span class="title"><ion-icon name="lock-closed-outline"></ion-icon>Private Exchange</span>
-                    <span class="description">A TRUE private exchange for media sites & publishers! Take control of your business.</span>
-                    <a class="btn btn-more" href="">
-                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        Learn More
-                    </a>
-                    <a class="copyright" href="" target="_blank">www.directbidder.com</a>
-                </span>
-            </div>
-            <div class="image">
-                <img src="img/character-3.svg">
-            </div>
-            <img class="section-shape" src="img/shape-blue.svg">
-        </section>
-        <article class="bg-blue">
-            <div class="info blue">
-                <span class="info-icon"><ion-icon name="medal-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
-            </div>
-            <div class="info blue">
-                <span class="info-icon"><ion-icon name="rocket-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
-            </div>
-            <div class="info blue">
-                <span class="info-icon"><ion-icon name="speedometer-outline"></ion-icon></span>
-                <span class="info-description">MyAdOptimizer is a cloud-based technology platform providing media sites & publishers a True Real Time Bidding Private Exchange.</span>
-            </div>
-        </article>
+            <img class="section-shape shape-2" src="img/shape-blue.svg">
+        </div>
+        <footer>Copyright © MyAdOptimizar 2020. All Rights Reserved.</footer>
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>

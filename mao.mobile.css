@@ -166,6 +166,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		width: 100%;
 	    padding: 10% 6%;
 		margin: 0 0 10% 0;
+		border-radius: 10px;
 	}
 
 	.info-icon ion-icon {
@@ -173,7 +174,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 
 	.info-description {
-	    font-size: 16px;
+	    font-size: 14px;
 	}
 
 	.section-1 {
@@ -191,11 +192,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		justify-content: center;
 		width: 100%;
 		margin: 0 0 5% 0;
-		font-size: 24px;
+		font-size: 18px;
+		line-height: normal;
 	}
 
 	.description {
-		font-size: 16px;
+		font-size: 14px;
 		text-align: center;
 		margin: 0 0 5% 0;
 	}
@@ -204,6 +206,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		float: none;
 		width: 50%;
 		margin: 0 auto;
+		font-size: 14px;
 	}
 
 	.btn-more ion-icon {
@@ -225,7 +228,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 	.form-container {
 	    margin: 80px 0 0 0;
-	    padding: 10% 5%;
+	    padding: 15% 5%;
 	}
 
 	.field-title {
@@ -243,6 +246,81 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	.btn-submit {
 		width: 100% !important;
 		line-height: 40px !important;
+	}
+
+	.text-yellow .content .title {
+	    width: 100%;
+	    justify-content: center;
+	}
+
+	.text-yellow .content .description {
+	    text-align: center;
+	}
+
+	.text-yellow .content .btn-more {
+	    float: none;
+	}
+
+	.text-yellow .content .copyright {
+	    text-align: center;
+	}
+
+	.image-yellow {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.section {
+		height: auto;
+		padding: 80px 5% 0;
+	}
+
+	.row {
+	    display: block;
+	    width: 100%;
+	    height: auto;
+	}
+
+	.section-text,
+	.section-image {
+	    width: 100%;
+	    height: 40vh;
+	}
+
+	.section-image {
+	    align-items: flex-end;
+	    justify-content: center;
+	}
+
+	.section-image img {
+	    height: 100%;
+	}
+
+	.section-more {
+	    display: block;
+	    height: auto;
+	}
+
+	.section-article {
+	    width: 100%;
+	    height: auto;
+	    padding: 15px;
+	    margin: 0 0 5% 0;
+	    border-radius: 10px;
+	}
+
+	.section-article:last-child {
+	    margin: 0 0 5% 0;
+	}
+
+	.article-icon ion-icon {
+	    font-size: 45px;
+	    color: #fff;
+	}
+
+	footer {
+	    height: 40px;
+	    font-size: 8px;
 	}
 
 }
