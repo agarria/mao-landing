@@ -348,4 +348,30 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	    margin: 0 auto !important;
 	}
 
+	.swap-right .section-image {
+	    align-items: flex-end !important;
+	    justify-content: center !important;
+        margin-top: 40vh;
+	}
+
+	.swap-right .section-text {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+	}
+
+	.swap-right .section-text .content .title {
+	    width: 100%;
+	    justify-content: center;
+	}
+
+	.swap-right .section-text .content .description,
+	.swap-right .section-text .content .copyright {
+	    text-align: center;
+	}
+
+	.swap-right .section-text .content .btn {
+	    float: none;
+	}
+
 }
