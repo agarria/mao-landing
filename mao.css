@@ -804,3 +804,22 @@ footer {
     float: none;
     margin: 0 auto;
 }
+
+.swap-right .section-image {
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+}
+
+.swap-right .section-text .content .title {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.swap-right .section-text .content .description,
+.swap-right .section-text .content .copyright {
+    text-align: right;
+}
+
+.swap-right .section-text .content .btn {
+    float: right;
+}
