@@ -29,8 +29,7 @@ if( empty($errors))
 {
 	$to = $myemail; 
 	$email_subject = "MAO | New Message By $name $lastname";
-	$email_body = "MAO | Check Page.".
-	" Here are the details:\n Name: $name \n Last Name: $lastname \n Email: $email \n Subject: $subject \n Interest: $interest \n Message \n $message"; 
+	$email_body = "New message, here are the details:\n\nName: $name\nLast Name: $lastname\nEmail: $email\nSubject: $subject\nInterest: $interest\nMessage:\n$message"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email";

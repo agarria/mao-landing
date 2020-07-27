@@ -236,6 +236,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		margin: 0 0 10% 0;
 	}
 
+	.field-50 {
+	    width: 100%;
+	}
+
+	.field-fix input {
+		width: 100%;
+	}
+
 	input,
 	select {
 	    padding: 0 15px;

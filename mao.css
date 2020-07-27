@@ -561,6 +561,14 @@ article {
     margin: 0;
 }
 
+.field-fix input {
+    width: 95%;
+}
+
+.field-50 {
+    width: 50%;
+}
+
 .field-name {
     display: block;
     float: left;

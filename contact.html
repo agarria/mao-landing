@@ -65,12 +65,12 @@
         <div class="form-container">
             <form method="post" name="contact_form" action="form-handler.php">
                 <span class="field-title">Contact Us</span>
-                <div class="field">
+                <div class="field field-50 field-fix">
                     <label class="field-name">Name <span class="field-required">*</span></label>
                     <input id="name" type="text" name="name">
                     <span class="field-description">Put your name</span>
                 </div>
-                <div class="field">
+                <div class="field field-50">
                     <label class="field-name">Last Name <span class="field-required">*</span></label>
                     <input id="lastname" type="text" name="lastname">
                     <span class="field-description">Put your last name</span>
@@ -80,12 +80,12 @@
                     <input id="email" type="email" name="email">
                     <span class="field-description">Put your personal email address</span>
                 </div>
-                <div class="field">
+                <div class="field field-50 field-fix">
                     <label class="field-name">Subject <span class="field-required">*</span></label>
                     <input id="subject" type="text" name="subject">
                     <span class="field-description">Put the subject of your interest</span>
                 </div>
-                <div class="field">
+                <div class="field field-50">
                     <label class="field-name">My Partnetship Interest <span class="field-required">*</span></label>
                     <select id="interest" name="interest">
                         <option value="" selected disabled>Choose</option>
@@ -104,10 +104,22 @@
                 </div>
             </form>
         </div>
-        <footer>Copyright © MyAdOptimizar 2020. All Rights Reserved.</footer>
+        <footer>Copyright © MyAdOptimizer 2020. All Rights Reserved.</footer>
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="text/javascript" src="gen_validatorv31.js"></script>
 <script type="text/javascript" src="mao.js"></script>
+<script type="text/javascript">
+    var frmvalidator  = new Validator("contact_form");
+
+    frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("lastname","req","Please provide your last name"); 
+    frmvalidator.addValidation("email","req","Please provide your email");
+    frmvalidator.addValidation("email","email","Please enter a valid email address");
+    frmvalidator.addValidation("subject","req","Please provide the subject of your interest"); 
+    frmvalidator.addValidation("interest","req","Please provide the interest");
+    frmvalidator.addValidation("message","req","Please enter your message");
+</script>
 </html>
