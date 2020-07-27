@@ -334,4 +334,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		margin: 0 0 5% 0;
 	}
 
+	.btn-thanks {
+	    width: 40% !important;
+	    float: none !important;
+	    margin: 0 auto !important;
+	}
+
 }

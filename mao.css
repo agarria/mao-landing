@@ -162,6 +162,7 @@ body {
 .section-text,
 .section-image,
 form,
+.banner-content,
 .section-article:nth-child(3) {
     opacity: 0;
     animation: showimg .3s forwards;
