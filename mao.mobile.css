@@ -292,16 +292,29 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	.section-text,
 	.section-image {
 	    width: 100%;
-	    height: 40vh;
+	    height: auto;
+	}
+
+	.section-text {
+		margin: 10% 0;
 	}
 
 	.section-image {
 	    align-items: flex-end;
 	    justify-content: center;
+	    height: 40vh;
 	}
 
 	.section-image img {
 	    height: 100%;
+	}
+
+	.section-image-desktop {
+		display: none;
+	}
+
+	.section-image-mobile {
+		display: flex;
 	}
 
 	.section-more {
@@ -351,13 +364,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	.swap-right .section-image {
 	    align-items: flex-end !important;
 	    justify-content: center !important;
-        margin-top: 40vh;
-	}
-
-	.swap-right .section-text {
-    	position: absolute;
-    	top: 0;
-    	left: 0;
 	}
 
 	.swap-right .section-text .content .title {

@@ -597,6 +597,9 @@ article {
     height: 100vh;
     padding: 100px 10% 0;
     margin: 0;
+}
+
+.section:nth-child(3) {
     overflow: hidden;
 }
 
@@ -605,7 +608,7 @@ article {
     display: flex;
     float: left;
     width: 100%;
-    height: calc(100% - 160px);
+    height: calc(100% - 220px);
 }
 
 .section-text,
@@ -622,6 +625,14 @@ article {
 .section-text {
     align-items: center;
     justify-content: center;
+}
+
+.section-image-desktop {
+    display: flex;
+}
+
+.section-image-mobile {
+    display: none;
 }
 
 .content {
@@ -683,7 +694,7 @@ article {
     justify-content: center;
     float: left;
     width: 100%;
-    height: 160px;
+    height: 220px;
     padding: 0;
 }
 
@@ -707,16 +718,26 @@ article {
     margin: 0;
 }
 
+.article-box {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
 .article-icon {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     float: left;
-    width: 30%;
+    width: 100%;
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .article-icon ion-icon {
@@ -724,17 +745,32 @@ article {
     color: #fff;
 }
 
+.article-title {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
 .article-description {
     position: relative;
     display: block;
     float: left;
-    width: 70%;
+    width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
     color: #fff;
     font-size: 14px;
     font-weight: 400;
+    text-align: center;
 }
 
 footer {
