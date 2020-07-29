@@ -194,6 +194,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		margin: 0 0 5% 0;
 		font-size: 18px;
 		line-height: normal;
+		text-align: center;
 	}
 
 	.description {
